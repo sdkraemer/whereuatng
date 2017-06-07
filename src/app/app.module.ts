@@ -4,6 +4,14 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 
+
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { MaterialModule } from '@angular/material';
+import 'hammerjs';
+
+
+
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 
@@ -22,7 +30,10 @@ import { CallbackComponent } from './callback/callback.component';
     BrowserModule,
     FormsModule,
     HttpModule,
-    RouterModule.forRoot(ROUTES)
+    RouterModule.forRoot(ROUTES),
+    MaterialModule,
+    FlexLayoutModule,
+    BrowserAnimationsModule,
   ],
   providers: [AuthService],
   bootstrap: [AppComponent]
